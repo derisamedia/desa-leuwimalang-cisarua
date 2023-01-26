@@ -73,7 +73,7 @@ import Sidebar from "../components/Sidebar.vue";
       </ul>
 
       <p class="text-3xl font-semibold my-4">Struktur Desa</p>
-      <img src="@/assets/struktur.jpg" alt="" />
+      <img src="@/assets/strukturdesa.png" alt="" />
     </div>
   </main>
 </template>
