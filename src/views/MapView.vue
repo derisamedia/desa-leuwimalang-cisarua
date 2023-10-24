@@ -112,7 +112,7 @@ export default {
 
       this.layerData.push(data.features[nextIndex]);
 
-      this.timeout = setTimeout(this.loadSomeGeoJson, 1000);
+      this.timeout = setTimeout(this.loadSomeGeoJson, 5000);
     },
   },
 
