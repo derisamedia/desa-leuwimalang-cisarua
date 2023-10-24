@@ -99,13 +99,9 @@ export default {
 
   methods: {
     async loadSomeGeoJson() {
-      const mapGeoJson = [
-        "src/assets/ds_nyule.geojson",
-        "src/assets/ds_nyule.geojson",
-      ];
       const nextIndex = this.layerData.length;
 
-      const response = await fetch("src/assets/ds_nyule.geojson");
+      const response = await fetch("@/assets/ds_nyule.geojson");
       const data = await response.json();
 
       console.log(data);
@@ -156,7 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("src/assets/lu_ds_nyule.geojson");
+    const response = await fetch("@/assets/lu_ds_nyule.geojson");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
