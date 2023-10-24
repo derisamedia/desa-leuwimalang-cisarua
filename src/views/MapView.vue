@@ -1,5 +1,5 @@
 <script setup>
-import Header from "../components/Header.vue";
+import Header from "./components/Header.vue";
 import { latLngBounds, latLng } from "leaflet";
 import {
   LMap,
@@ -101,9 +101,7 @@ export default {
     async loadSomeGeoJson() {
       const nextIndex = this.layerData.length;
 
-      const response = await fetch(
-        "https://maps.desapresisi.id/api/geodeskel?kode=74.08.09.2006"
-      );
+      const response = await fetch("assets/ds_nyule.geojson");
       const data = await response.json();
 
       console.log(data);
@@ -154,9 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch(
-      "https://maps.desapresisi.id/api/landuse?kode=74.08.09.2006"
-    );
+    const response = await fetch("assets/lu_ds_nyule.geojson");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
