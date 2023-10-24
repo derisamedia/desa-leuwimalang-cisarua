@@ -7,8 +7,10 @@ import Sidebar from "../components/Sidebar.vue";
 <template>
   <Header />
   <Banner />
+
   <main class="flex">
     <Sidebar />
+
     <div class="flex-1 p-10">
       <p class="text-3xl font-semibold">Visi & Misi Desa</p>
       <p class="text-lg font-semibold">Visi</p>
@@ -71,9 +73,6 @@ import Sidebar from "../components/Sidebar.vue";
           karakter dasar dari masyarakat desa dan juga bangsa Indonesia.
         </li>
       </ul>
-
-      <p class="text-3xl font-semibold my-4">Struktur Desa</p>
-      <img src="@/assets/strukturdesa.png" alt="" />
     </div>
   </main>
 </template>
