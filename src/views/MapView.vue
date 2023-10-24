@@ -101,7 +101,9 @@ export default {
     async loadSomeGeoJson() {
       const nextIndex = this.layerData.length;
 
-      const response = await fetch("src/assets/ds_nyule.geojson");
+      const response = await fetch(
+        "https://maps.desapresisi.id/api/geodeskel?kode=74.08.09.2006"
+      );
       const data = await response.json();
 
       console.log(data);
@@ -152,7 +154,9 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("src/assets//lu_ds_nyule.geojson");
+    const response = await fetch(
+      "https://maps.desapresisi.id/api/landuse?kode=74.08.09.2006"
+    );
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
