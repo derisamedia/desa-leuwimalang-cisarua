@@ -8,14 +8,14 @@
     <div class="ml-10 flex flex-col justify-center">
       <p class="text-white text-2xl mb-2">Profile Desa</p>
       <!-- Sesuaikan nama desa masing-masing -->
-      <p class="text-white text-3xl">Desa Setu</p>
-      <p class="text-white text-3xl">Kab. Bogor</p>
+      <p class="text-white text-3xl font-bold">Desa Leuwimalang</p>
+      <p class="text-white text-3xl">Kec. Cisarua Kab. Bogor</p>
     </div>
     <div class="grid place-items-center ml-auto mr-20">
       <iframe
         width="480"
         height="260"
-        src="https://www.youtube.com/embed/X8PyS6qav1s"
+        src="https://www.youtube.com/embed/BdLRZuer5x4"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

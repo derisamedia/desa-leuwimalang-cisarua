@@ -8,10 +8,10 @@
     <div class="flex flex-col ml-5 justify-center">
       <!-- Sesuaikan nama desa masing-masing -->
       <p class="text-lg leading-none uppercase text-white font-bold mb-2">
-        Desa Setu
+        Desa Leuwimalang
       </p>
-      <p class="text-lg leading-none uppercase text-white font-bold">
-        Kabupaten Bogor
+      <p class="text-lg leading-none uppercase text-white font-regular">
+        Kecamatan Cisarua Kabupaten Bogor
       </p>
     </div>
     <div class="flex items-center h-full ml-auto pr-20">
