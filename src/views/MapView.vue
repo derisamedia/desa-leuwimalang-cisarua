@@ -79,12 +79,12 @@ export default {
       show: true,
       enableTooltip: true,
       zoom: 15,
-      center: [-3.28561, 120.97431],
+      center: [-6.6666908238451565, 106.92798605479591],
       layerData: [],
       geojson: null,
       fillColor: "#0CF9E0",
       tileProviders: tileProviders,
-      marker: latLng(-3.28561, 120.97431),
+      marker: latLng(-6.6666908238451565, 106.92798605479591),
       timeout: undefined,
     };
   },
@@ -101,7 +101,7 @@ export default {
     async loadSomeGeoJson() {
       const nextIndex = this.layerData.length;
 
-      const response = await fetch("/ds_nyule.geojson");
+      const response = await fetch("/desa_leuwimalang.geojson");
       const data = await response.json();
 
       console.log(data);
@@ -152,7 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("/lu_ds_nyule.geojson");
+    const response = await fetch("/desa_leuwimalang.geojson");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
